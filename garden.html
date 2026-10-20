@@ -61,6 +61,12 @@
       pointer-events: none;
     }
     .dedication { margin: 0; font: italic 20px/1.6 var(--font-letter); }
+    .back-link {
+      pointer-events: auto; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 10px;
+      min-height: 40px; padding: 8px 14px; border: 1px solid #ead4dc; border-radius: 22px;
+      background: #fffdfbe6; color: var(--ink); font-size: 13px; text-decoration: none;
+    }
+    .back-link:hover { background: #fae7ef; }
     .date { margin: 0; text-align: right; font-size: 11px; line-height: 1.7; color: var(--muted); }
     .date span { display: block; font: 28px/1.4 var(--font-letter); color: var(--ink); margin-bottom: 5px; }
     #flowers { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; }
@@ -141,7 +147,7 @@
       .date { max-width: 130px; font-size: 10px; }
       .date span { font-size: 25px; }
       .letter { padding: 35px 26px 25px; }
-      .intro { top: 18%; }
+      .intro { top: 21%; }
       h1 { font-size: clamp(23px, 5.8vw, 28px); }
     }
     @media (max-height: 600px) and (min-width: 600px) {
@@ -159,7 +165,10 @@
 <body>
   <main class="garden" id="garden">
     <header class="page-header">
-      <p class="dedication">Dành em, cả một vườn thương.</p>
+      <div class="header-start">
+        <a class="back-link" href="./index.html"><span aria-hidden="true">←</span> Về bó hoa</a>
+        <p class="dedication">Dành em, cả một vườn thương.</p>
+      </div>
       <p class="date"><span>20 / 10</span>Ngày Phụ nữ Việt Nam</p>
     </header>
     <canvas id="flowers" aria-hidden="true"></canvas>
@@ -187,14 +196,14 @@
           </g>
         </svg>
         <div id="cardReading">
-          <p class="recipient">Gửi <span id="cardRecipient">Huyền My</span>,</p>
+          <p class="recipient">Gửi <span id="cardRecipient">Nhím</span>,</p>
           <h2 id="cardTitle">Mong những điều đẹp đẽ<br>luôn nở bên em.</h2>
           <div id="cardMessage">
             <p class="message">Một bông hoa có thể làm một ngày thêm đẹp.<br>Còn em, làm thế giới này dịu dàng hơn.</p>
-            <p class="message">Nhân ngày 20/10, chúc em luôn được yêu thương, trân trọng và có thật nhiều niềm vui. Mong em đủ bình yên để tận hưởng những điều nhỏ bé, đủ tự tin để theo đuổi những điều mình yêu.</p>
+            <p class="message">Nhân ngày 20/10, chúc em luôn được yêu thương, trân trọng và có thật nhiều niềm vui. Mong em đủ bình yên để tận hưởng những điều nhỏ bé, đủ tự tin để theo đuổi những điều mình thích.</p>
             <p class="message">Hôm nay và cả những ngày sau,<br>hãy cứ rạng rỡ theo cách của riêng mình nhé.</p>
           </div>
-          <p class="signature" id="cardSignature">Anh ♡</p>
+          <p class="signature" id="cardSignature">Hì Hì</p>
           <div class="letter-actions">
             <button class="view-garden" id="viewGarden" type="button" autofocus>Ngắm vườn hoa</button>
             <button class="view-garden" id="editCard" type="button">Viết lời chúc riêng</button>
