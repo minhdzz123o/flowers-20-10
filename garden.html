@@ -167,7 +167,7 @@
     <header class="page-header">
       <div class="header-start">
         <a class="back-link" href="./index.html"><span aria-hidden="true">←</span> Về bó hoa</a>
-        <p class="dedication">Dành mẹ, cả một vườn thương.</p>
+        <p class="dedication">Dành em, cả một vườn thương.</p>
       </div>
       <p class="date"><span>20 / 10</span>Ngày Phụ nữ Việt Nam</p>
     </header>
@@ -175,7 +175,7 @@
     <button class="flower-button" id="bloom" type="button" aria-label="Chạm để cả vườn hoa nở" aria-describedby="introHint"></button>
     <div class="intro" id="intro">
       <h1>Từ một bông hoa nhỏ…</h1>
-      <p id="introHint">Chạm vào hoa, một điều dịu dàng đang chờ mẹ.</p>
+      <p id="introHint">Chạm vào hoa, một điều dịu dàng đang chờ em.</p>
     </div>
     <p class="progress" id="status" role="status" aria-live="polite" aria-atomic="true"></p>
     <nav class="garden-actions" id="actions" aria-label="Vườn hoa và thiệp" hidden>
@@ -196,14 +196,14 @@
           </g>
         </svg>
         <div id="cardReading">
-          <p class="recipient">Gửi <span id="cardRecipient">mẹ yêu</span>,</p>
-          <h2 id="cardTitle">Mong những điều đẹp đẽ<br>luôn nở bên mẹ.</h2>
+          <p class="recipient">Gửi <span id="cardRecipient">Nhím</span>,</p>
+          <h2 id="cardTitle">Mong những điều đẹp đẽ<br>luôn nở bên em.</h2>
           <div id="cardMessage">
-            <p class="message">Một bông hoa có thể làm một ngày thêm đẹp.<br>Còn mẹ, làm thế giới của con dịu dàng hơn.</p>
-            <p class="message">Nhân ngày 20/10, con chúc mẹ luôn khỏe mạnh, được yêu thương và có thật nhiều niềm vui. Mong mẹ đủ bình yên để tận hưởng những điều nhỏ bé, và có thêm thời gian cho những điều mẹ thích.</p>
-            <p class="message">Cảm ơn mẹ vì đã luôn ở bên con.<br>Con thương mẹ nhiều lắm.</p>
+            <p class="message">Một bông hoa có thể làm một ngày thêm đẹp.<br>Còn em, làm thế giới này dịu dàng hơn.</p>
+            <p class="message">Nhân ngày 20/10, chúc em luôn được yêu thương, trân trọng và có thật nhiều niềm vui. Mong em đủ bình yên để tận hưởng những điều nhỏ bé, đủ tự tin để theo đuổi những điều mình thích.</p>
+            <p class="message">Hôm nay và cả những ngày sau,<br>hãy cứ rạng rỡ theo cách của riêng mình nhé.</p>
           </div>
-          <p class="signature" id="cardSignature">Con của mẹ ♡</p>
+          <p class="signature" id="cardSignature">Hì Hì</p>
           <div class="letter-actions">
             <button class="view-garden" id="viewGarden" type="button" autofocus>Ngắm vườn hoa</button>
             <button class="view-garden" id="editCard" type="button">Viết lời chúc riêng</button>
@@ -228,7 +228,7 @@
         <p class="card-status" id="cardStatus" role="status" aria-live="polite"></p>
       </article>
     </dialog>
-    <noscript><p class="noscript">Bật JavaScript để chạm vào hoa và mở thiệp nhé.<br>Chúc mẹ ngày 20/10 bình an, rạng rỡ và tràn đầy yêu thương!</p></noscript>
+    <noscript><p class="noscript">Bật JavaScript để chạm vào hoa và mở thiệp nhé.<br>Chúc em ngày 20/10 bình an, rạng rỡ và tràn đầy yêu thương!</p></noscript>
   </main>
   <script src="./garden-botany.js"></script>
   <script src="./garden-card.js"></script>
@@ -479,7 +479,7 @@
       }
       function finish() {
         state = 'ready'; garden.classList.add('is-ready'); actions.hidden = false;
-        status.textContent = 'Cả vườn hoa đã nở. Một tấm thiệp dành tặng mẹ.';
+        status.textContent = 'Cả vườn hoa đã nở. Một tấm thiệp dành tặng em.';
         openCard();
       }
       function draw(time) {
