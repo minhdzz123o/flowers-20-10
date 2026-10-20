@@ -466,7 +466,7 @@
       }
 
       function openCard() {
-        if (!card.open) card.showModal();
+        if (!card.open) { card.showModal(); card.scrollTop = 0; }
       }
       function finish() {
         state = 'ready'; garden.classList.add('is-ready'); actions.hidden = false;
