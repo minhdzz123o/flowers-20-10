@@ -3,9 +3,9 @@
 
   const STORAGE_KEY = 'flower.greeting.20-10.v1';
   const defaultGreeting = {
-    recipient: 'Huyền My',
-    message: 'Nhân ngày Phụ nữ Việt Nam 20/10, chúc em luôn khỏe mạnh, bình an và có thật nhiều niềm vui.\n\nMong em được yêu thương từ những điều nhỏ nhất, có thời gian cho bản thân và tự tin theo đuổi những điều mình mong muốn.\n\nHôm nay và cả những ngày sau, hãy luôn mỉm cười theo cách của riêng em nhé.',
-    sender: 'Hì Hì'
+    recipient: 'mẹ yêu',
+    message: 'Nhân ngày Phụ nữ Việt Nam 20/10, con chúc mẹ luôn khỏe mạnh, bình an và có thật nhiều niềm vui.\n\nCảm ơn mẹ vì đã luôn yêu thương, chăm lo và ở bên con trong mọi chặng đường. Mẹ hãy dành thêm thời gian cho bản thân, nghỉ ngơi nhiều hơn và làm những điều mẹ thích nhé.\n\nCon thương mẹ nhiều lắm. Hôm nay và cả những ngày sau, mong mẹ luôn mỉm cười thật tươi.',
+    sender: 'Con của mẹ'
   };
   const dialog = document.getElementById('greetingCard');
   const openButton = document.getElementById('openCard');
@@ -213,7 +213,7 @@
   editor.addEventListener('submit', event => {
     event.preventDefault();
     for (const input of Object.values(inputs)) {
-      input.setCustomValidity(input.value.trim() ? '' : 'Em viết vài chữ vào đây nhé.');
+      input.setCustomValidity(input.value.trim() ? '' : 'Viết vài chữ vào đây nhé.');
     }
     if (!editor.reportValidity()) return;
     greeting = Object.fromEntries(Object.entries(inputs).map(([key, input]) => [key, input.value.trim()]));
@@ -221,7 +221,7 @@
     showReading();
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(greeting));
-      status.textContent = 'Đã lưu lời chúc của em.';
+      status.textContent = 'Đã lưu lời chúc.';
     } catch {
       status.textContent = 'Đã cập nhật thiệp. Trình duyệt chưa cho phép lưu để dùng lần sau.';
     }
